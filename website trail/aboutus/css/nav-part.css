@@ -1,121 +1,147 @@
 /* General Navbar */
 .nav-part {
-    border: none;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px; 
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    position: relative;
-    z-index: 1000;
-  }
-  
-  .nav-part:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Left Navigation (Logo + Links) */
-  .nav-part-left {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-  }
-  
-  /* Right Navigation (Buttons) */
-  .nav-part-right {
-    display: flex;
-    gap: 20px;
-    font-size: 0.8rem;
-    align-items: center;
-  }
-  
-  /* Logo Styling */
-  .nav-part-left > div:first-child {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  
-  .nav-part-left > div:first-child > img {
-    width: 60px;
-    transition: transform 0.3s ease;
-  }
-  
-  .nav-part-left > div:first-child img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-  
-  /* Navbar Links */
-  .nav-part-left > div:last-child {
-    display: flex;
-    gap: 30px;
-    font-size: 0.9rem;
-  }
-  
-  .nav-part-left > div:last-child span {
-    display: inline-block;
-    font-weight: 800;
-    font-size: 1rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  /* Underline Effect on Hover */
-  .nav-part-left > div:last-child span::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px; 
-    width: 0;
-    height: 2px;
-    background-color: #0078ff;
-    transition: width 0.3s ease-in-out;
-  }
-  
-  .nav-part-left > div:last-child span:hover {
-    color: #0078ff;
-    transform: scale(1.05);
-  }
-  
-  .nav-part-left > div:last-child span:hover::after {
-    width: 100%;
-  }
-  
-  /* Right Side Button (Sign Up) */
-  .signup-btn {
-    color: white;
-    background-color: black;
-    padding: 12px 20px;
-    border-radius: 6px;
-    font-weight: 500;
-    text-transform: capitalize;
-    border: 2px solid transparent;
-    transition: background-color 0.3s ease, transform 0.2s ease, border 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .signup-btn:hover {
-    background-color: #0078ff;
-    border: 2px solid #0056b3;
-    transform: scale(1.05);
-  }
-  
-  .nav-part-right > div:last-child{
-    color: white;
-    background-color: black;
-    padding: 14px 22px;
-    border-radius: 6px;
-    font-weight: 200;
-    text-transform: capitalize;
-  }
-  
-  .nav-part-right > div:last-child:hover {
-    background-color: #0078ff; 
-    transform: scale(1.05); 
-  }
+  position: relative;
+  top: 0;
+  border: none;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px; 
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.nav-part:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Navigation (Logo + Links) */
+.nav-part-left {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+/* Right Navigation (Buttons) */
+.nav-part-right {
+  display: flex;
+  gap: 20px;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+/* Logo Styling */
+.nav-part-left > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-part-left > div:first-child > img {
+  width: 60px;
+  transition: transform 0.3s ease;
+}
+
+.nav-part-left > div:first-child img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Navbar Links */
+.nav-part-left > div:last-child {
+  display: flex;
+  gap: 30px;
+  font-size: 0.9rem;
+}
+
+.nav-part-left > div:last-child span {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Underline Effect on Hover */
+.nav-part-left > div:last-child span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; 
+  width: 0;
+  height: 2px;
+  background-color: #0078ff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-part-left > div:last-child span:hover {
+  color: #0078ff;
+  transform: scale(1.05);
+}
+
+.nav-part-left > div:last-child span:hover::after {
+  width: 100%;
+}
+
+/* Right Side Button (Sign Up) */
+.signup-btn {
+  color: white;
+  background-color: black;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease, transform 0.2s ease, border 0.3s ease;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #0078ff;
+  border: 2px solid #0056b3;
+  transform: scale(1.05);
+}
+
+.nav-part-right > div:last-child{
+  color: white;
+  background-color: black;
+  padding: 14px 22px;
+  border-radius: 6px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.nav-part-right > div:last-child:hover {
+  background-color: #0078ff; 
+  transform: scale(1.05); 
+}
+
+.nav-part-left, .nav-part-right {
+  flex-shrink: 0;  
+  flex-grow: 0;    
+}
+
+.logo-link {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  width: 60px; 
+}
+
+.logo-link img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-link img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

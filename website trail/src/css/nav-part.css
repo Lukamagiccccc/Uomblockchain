@@ -1,7 +1,7 @@
 /* General Navbar */
 .nav-part {
   border: none;
-  height: auto;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   padding: 20px 40px; 
@@ -118,4 +118,31 @@
 .nav-part-right > div:last-child:hover {
   background-color: #0078ff; 
   transform: scale(1.05); 
+}
+
+.logo-link {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  width: 60px; 
+}
+
+.logo-link img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-link img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+  opacity: 1;
 }

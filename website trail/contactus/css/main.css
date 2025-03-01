@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body{
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .part {
+    box-sizing: border-box;
+    width: 100%;
+    flex: 1; 
+    padding: 20px 40px;
+  
+  }
+  
+  @media (max-width: 768px) {
+    .part {
+        padding: 20px;
+    }
+  }
