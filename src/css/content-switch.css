@@ -1,0 +1,34 @@
+/* Hide all content sections by default */
+.content-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Show home section by default */
+#home {
+    display: block;
+    opacity: 1;
+}
+
+/* Hide home content when About Us is clicked */
+#about-us:target ~ .container #home {
+    display: none;
+}
+
+/* Show About Us when clicked */
+#about-us:target ~ .container #about-us {
+    display: block;
+    opacity: 1;
+}
+
+/* Keep the background visible */
+.content-part1-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(96.1deg, #FAD961 0.86%, #F76B1C 34.84%, #36D1DC 65.94%, #5B86E5 100%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

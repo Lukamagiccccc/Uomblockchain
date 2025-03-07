@@ -1,0 +1,255 @@
+.content-part1{
+  display: flex;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding-block: 60px;
+}
+
+.content-part1-bg.content-part1-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  opacity: 0.3;
+  top: 0;
+}
+.content-part1-bg > div{
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(96.1deg, #FAD961 0.86%, #F76B1C 34.84%, #36D1DC 65.94%, #5B86E5 100%);
+  flex-shrink: 0;
+}
+.content-part1-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 100px;
+  width: 50%;
+  margin-top: 40px;
+}
+
+
+.content-part1-left-title{
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  gap: 20px;
+  font-family: "Quantico", sans-serif;
+}
+.content-part1-left-title > span:first-child{
+  font-family: "Quantico", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 5rem);
+  white-space: pre-line;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1px;
+}
+
+.content-part1-left-title > span:first-child::after {
+  content: "";
+  display: block;
+  width: 100%; 
+  height: 2px; 
+  background-color: black; 
+  position: absolute; 
+  left: 2px;
+  top: 105px;
+  right: 2px;
+}
+
+.content-part1-left-title > span:last-child{
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.content-part1-left-other {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.content-part1-left-title > span:last-child > span {
+  display: inline-block;
+  padding: 10px 14px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  box-shadow: 0px 30px 16px rgba(0, 0, 0, 0.125);
+}
+.content-part1-left-title > span:last-child > span > span{
+  font-size: 0.8rem;
+  vertical-align: top;
+}
+
+.content-part1-left-other img {
+  width: 100%; 
+  max-width: 500px; 
+  height: auto; 
+  align-self: center; 
+  border-radius: 10px; 
+  margin-top: -70px;
+}
+
+
+.content-part1-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 0;
+  position: absolute;
+  width: 50%;
+  padding: 20px;
+}
+
+
+.team-member {
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+  
+}
+
+/* Team Member Photos */
+.team-member img {
+  width: 100%;
+  max-width: 130px; 
+  height: auto; 
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin-top: 60px;
+  margin-left: 800px;
+}
+
+.team-member-lance-ma{
+ margin-left: 300px;
+ margin-top: 30px;
+
+}
+
+.team-member-tony-chen{
+  margin-left: 600px;
+  margin-top: -250px;
+  position: fixed;
+ }
+
+ .team-member-feiyang-xing{
+  margin-left: 300px;
+  margin-top: 100px;
+  position: fixed;
+  width: 280px;  
+  height: 380px;
+ 
+ }
+
+ .team-member-chen-wang{
+  margin-left: 600px;
+  margin-top: 100px;
+  position: fixed;
+ 
+ }
+
+
+.team-member-lance-ma h3 {
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-left: 820px;
+  font-weight: 600;
+  position: fixed;
+}
+
+.team-member-lance-ma p {
+  font-size: 1rem;
+  margin-top: 60px;
+  margin-left: 820px;
+  font-weight: 600;
+  position: absolute;
+}
+
+.team-member-tony-chen h3 {
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-left: 825px;
+  font-weight: 600;
+  position: fixed;
+}
+
+.team-member-tony-chen p {
+  font-size: 1rem;
+  margin-top: 60px;
+  margin-left: 810px;
+  font-weight: 600;
+  position: fixed;
+}
+
+.team-member-feiyang-xing h3 {
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-left: 815px;
+  font-weight: 600;
+  position: fixed;
+}
+
+.team-member-feiyang-xing p {
+  font-size: 1rem;
+  margin-top: 60px;
+  margin-left: 825px;
+  font-weight: 600;
+  position: absolute;
+}
+
+.team-member-chen-wang h3 {
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-left: 795px;
+  font-weight: 600;
+  position: fixed;
+}
+
+.team-member-chen-wang p {
+  font-size: 1rem;
+  margin-top: 60px;
+  margin-left: 830px;
+  font-weight: 600;
+  position: absolute;
+}
+
+
+
+@media (max-width: 768px) {
+.content-part1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-part1-left,
+.content-part1-right {
+    width: 90%;
+}
+
+.content-part1-right-circle {
+    width: 200px;
+    height: 200px;
+    transform: translateY(-50px);
+}
+
+.content-part1-right-items > div {
+    width: 60px;
+    height: 60px;
+}
+}
