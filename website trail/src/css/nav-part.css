@@ -9,7 +9,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  position: relative;
+  position: fixed; 
+  top: 0;         
+  left: 0;       
+  width: 100%;
   z-index: 1000;
 }
 
@@ -23,6 +26,8 @@
   display: flex;
   gap: 100px;
   align-items: center;
+  padding-left: 310px;
+  position: fixed;
 }
 
 /* Right Navigation (Buttons) */
@@ -31,6 +36,7 @@
   gap: 20px;
   font-size: 0.8rem;
   align-items: center;
+  padding-left: 1450px;
 }
 
 /* Logo Styling */
@@ -96,8 +102,9 @@
   font-weight: 500;
   text-transform: capitalize;
   border: 2px solid transparent;
-  transition: background-color 0.3s ease, transform 0.2s ease, border 0.3s ease;
+  transition: all 0.3s ease;;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .signup-btn:hover {
@@ -120,6 +127,11 @@
   transform: scale(1.05); 
 }
 
+.nav-part-left, .nav-part-right {
+  flex-shrink: 0;  
+  flex-grow: 0;    
+}
+
 .logo-link {
   display: flex; 
   align-items: center;
@@ -136,13 +148,4 @@
 .logo-link img:hover {
   transform: scale(1.1);
   cursor: pointer;
-}
-
-body {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-body.loaded {
-  opacity: 1;
 }
