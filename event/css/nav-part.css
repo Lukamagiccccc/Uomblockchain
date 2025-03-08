@@ -4,7 +4,8 @@
   height: 100px;
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px; 
+  align-items: center;
+  padding: 20px 5%; 
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -147,7 +148,6 @@
   transform: scale(1.1);
   cursor: pointer;
 }
-
 /* ✅ For Laptop Screens (Below 1440px) */
 @media (max-width: 1440px) {
   .nav-part {
