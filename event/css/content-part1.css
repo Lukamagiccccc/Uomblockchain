@@ -6,6 +6,8 @@
   align-items: flex-start;
   position: relative;
   padding-block: 60px;
+  top: 0;         
+  left: 0; 
 }
 
 .content-part1-bg.content-part1-bg{

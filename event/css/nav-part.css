@@ -26,8 +26,7 @@
   display: flex;
   gap: 100px;
   align-items: center;
-  padding-left: 310px;
-  position: fixed;
+  flex-grow: 1;
 }
 
 /* Right Navigation (Buttons) */
@@ -36,7 +35,6 @@
   gap: 20px;
   font-size: 0.8rem;
   align-items: center;
-  padding-left: 1450px;
 }
 
 /* Logo Styling */
